@@ -26,7 +26,6 @@
   border-radius: 10px;
   background: black;
   text-align: center;
-  // z-index: 1;
 
   &::before {
     content: "";
@@ -51,7 +50,7 @@
     left: 0;
     width: 10px;
     height: 10px;
-    background-image: url("/img/rating.svg");
+    background-image: url("../img/rating.svg");
     background-size: contain;
   }
 }
