@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page">
+    <object class="page__sprite-icons" style="display: none" data="img/sprite-icons.svg" type="image/svg+xml"></object>
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="page-logo">
+          <img class="page-logo__img" src="img/Logo.png" alt="Logo TVShow" width="157" height="70"/>
+        </div>
+
+        <div class="user-panel">
+          <a class="user-panel__link user-panel__icon-search" href="#">
+            <svg class="user-panel__link-icon" width="20" height="20">
+              <use href="img/sprite-icons.svg#group"></use>
+            </svg>
+          </a>
+          <a class="user-panel__link user-panel__icon-notification" href="#">
+            <svg class="user-panel__link-icon user-panel__link-icon_red" width="26" height="26">
+              <use href="img/sprite-icons.svg#group18"></use>
+            </svg>
+          </a>
+          <a class="user-panel__link user-panel__icon-login" href="#">
+            <svg class="user-panel__link-icon" width="20" height="21">
+              <use href="img/sprite-icons.svg#vector"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="main-nav main-nav_closed">
+          <button class="main-nav__btn" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <p class="main-nav__link_active" href="#">Home</p>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">TV Shows</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Movies</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Series</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="preview">
+        <div class="preview__inner-wrapper">
+          <h1 class="preview__title">Night Watch</h1>
+          <div class="status">
+            <div class="status__section status__section_year">
+              <span class="status__descr">2021</span>
+            </div>
+            <div class="status__section status__section_age-limit">
+              <span class="status__descr">18+</span>
+            </div>
+            <div class="status__section status__section_seasons">
+              <span class="status__descr">9 Seasons</span>
+            </div>
+            <div class="status__section status__section_rating">
+              <span class="status__descr">8.8</span>
+            </div>
+          </div>
+          <p class="preview__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident deserunt nesciunt modi atque iste praesentium minus. Voluptates, alias architecto! Numquam sint velit ea voluptas unde tempora veniam accusamus ipsum suscipit.</p>
+          <div class="preview__buttons">
+            <a class="button button__link button__link-play" href="#">Watch</a>
+            <button class="button" type="button">More information</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="trending-content">
+        <div class="trending-content__block">
+          <div class="block-name">
+            <a class="block-name__link" href="#">Trending TV Shows </a>
+          </div>
+            <div class="trending-slider">
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/19.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/20.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/21.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/22.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/23.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/24.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/10.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/11.jpg" alt="" width="206" height="309">
+              </a>
+              <a class="trending-slider__card" href="#">
+                <img class="trending-slider__img" src="img/12.jpg" alt="" width="206" height="309">
+              </a>
+            </div>
+        </div>
+
+        <div class="trending-content__block">
+          <div class="block-name">
+            <a class="block-name__link" href="#">Trending Movies </a>
+          </div>
+          <div class="trending-slider">
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/10.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/11.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/12.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/13.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/14.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/15.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/19.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/20.jpg" alt="" width="206" height="309">
+            </a>
+            <a class="trending-slider__card" href="#">
+              <img class="trending-slider__img" src="img/21.jpg" alt="" width="206" height="309">
+            </a>
+            </div>
+        </div>
+
+        <div class="trending-content__buttons">
+          <a class="button button__link trending-content__btn" href="#">See more</a>
+        </div>
+      </div>
+
+      <div class="popular-content">
+        <div class="popular-content__block">
+          <div class="block-name">
+            <a class="block-name__link" href="#">Popular Channels</a>
+          </div>
+          <div class="popular-cards">
+            <div class="popular-cards__item popular-cards__item_romance">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/romance.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Romance</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_drama">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/drama.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Drama</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_historical">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/historical.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Historical</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_action">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/action.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Action</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_sci-fi">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon popular-cards__icon_rocket" src="img/sci-fi.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Sci-fi</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_horror">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/horror.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Horror</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_comedy">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/comedy.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Comedy</span>
+              </a>
+            </div>
+            <div class="popular-cards__item popular-cards__item_documentary">
+              <a class="popular-cards__link" href="">
+                <img class="popular-cards__icon" src="img/documentary.svg" alt="" width="40" height="40">
+                <span class="popular-cards__descr">Documentary</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular-content__block">
+          <div class="block-name">
+            <a class="block-name__link" href="#">Popular Actors & Directors</a>
+          </div>
+          <div class="popular-slider">
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/1.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Samantha Bowen</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/2.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Rhys Birch</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/3.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">James Holloway</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/4.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Joshua Walton</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/5.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Patrick Elliott</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/6.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Morgan O'Neill</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/3.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">James Holloway</p>
+            </div>
+            <div class="popular-slider__card">
+              <a class="popular-slider__image-link" href="#">
+                <img class="popular-slider__img" src="img/4.jpg" alt="">
+              </a>
+              <p class="popular-slider__descr">Joshua Walton</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expected">
+        <div class="expected__wrapper">
+          <div class="expected__block">
+            <img class="expected__preview-img" src="img/Big.Buck.Bunny.jpg" alt="" width="720" height="341">
+          </div>
+          <div class="expected__block">
+            <img class="expected__icon" src="img/2021.svg" alt="" width="294" height="148">
+            <span class="expected__descr">Coming Soon...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="register-now">
+        <div class="register-now__inner-wrapper">
+          <p class="register-now__tagline">Are You New Here ? <br class="register-now__br"> Don’t wait, Register Now.</p>
+          <a class="button button__link" href="#">Register Now</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__links-wrapper">
+        <div class="page-logo footer__logo">
+          <img class="page-logo__img" src="img/Logo.png" alt="Logo TVShow" width="157" height="70"/>
+        </div>
+        <div class="footer-social">
+          <a class="footer-social__link" href="">
+            <img class="footer-social__icon" src="img/fb.svg" alt="" width="9" height="18">
+          </a>
+          <a class="footer-social__link" href="">
+            <img class="footer-social__icon" src="img/tw.svg" alt="" width="22" height="16">
+          </a>
+          <a class="footer-social__link" href="">
+            <img class="footer-social__icon" src="img/in.svg" alt="" width="14" height="14">
+          </a>
+          <a class="footer-social__link" href="">
+            <img class="footer-social__icon" src="img/inst.svg" alt="" width="20" height="20">
+          </a>
+        </div>
+      </div>
+
+      <div class="serp-footer">
+        <ul class="serp-footer__list">
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Voice over and Subtitle</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Voice Description</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Help Center</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Gift Cards</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Media Center</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Investor Relations</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Job Opportunities</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Terms of Use</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Privacy</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Legal Provisions</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Cookies Preferences</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Corporate Informations</a>
+          </li>
+          <li class="serp-footer__item">
+            <a class="serp-footer__link" href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="js/script.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </body>
+</html>

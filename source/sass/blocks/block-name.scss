@@ -1,0 +1,41 @@
+.block-name {
+  position: relative;
+  // padding-bottom: 20px;
+  padding: 0 0 20px 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(263deg, #26fff2 13.2%, #326cff 71.54%);
+    width: 5px;
+    height: 21px;
+    border-radius: 50px;
+    left: 10px;
+
+  @media (min-width: $desktop-width) {
+    height: 23px;
+  }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url('/img/arrow.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 2px;
+  }
+}
+
+.block-name__link {
+  @extend %fontMulishBold;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}

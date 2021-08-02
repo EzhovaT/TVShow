@@ -1,0 +1,56 @@
+@keyframes background-register-now {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.register-now {
+  padding: 40px 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
+}
+
+.register-now__inner-wrapper {
+  border-radius: 20px;
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 31px 17px;
+  text-align: center;
+  background: linear-gradient(336.56deg, transparent 65.12%, #ffffff 140.09%),
+    url("/img/pexels-anni-roenkae.jpg");
+  background-repeat: no-repeat;
+  animation: background-register-now 17s infinite alternate;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.register-now__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.register-now__tagline {
+  @extend %fontMulishBold;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: capitalize;
+
+  @media (min-width: $tablet-width) {
+    font-size: 34px;
+  }
+}

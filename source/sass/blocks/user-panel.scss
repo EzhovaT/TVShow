@@ -1,0 +1,22 @@
+.user-panel {
+  grid-column: 2/3;
+  grid-row: 1;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+    justify-content: space-around;
+  }
+}
+
+.user-panel__link {
+  margin: 0 10px;
+}
+
+.user-panel__link-icon_red {
+  fill: red;
+}

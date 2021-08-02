@@ -1,0 +1,22 @@
+.page-logo {
+  width: 78px;
+  height: 35px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 116px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    height: 50px;
+  }
+}
+
+.page-logo__img {
+  width: 100%;
+  height: 100%;
+}

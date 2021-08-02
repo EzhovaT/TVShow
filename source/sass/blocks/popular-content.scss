@@ -1,0 +1,7 @@
+.popular-content__block {
+  padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
+}

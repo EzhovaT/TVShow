@@ -1,0 +1,31 @@
+.footer {
+  padding: 20px;
+  background-color: #101012;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 100px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 157px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px;
+  }
+}
+
+.footer__links-wrapper {
+    @media (min-width: $tablet-width) {
+      width: 157px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.footer__logo{
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+   margin: 0;
+  }
+}

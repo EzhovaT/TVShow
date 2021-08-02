@@ -1,0 +1,11 @@
+.header {
+  display: grid;
+  grid-template-columns: min-content 1fr 40px;
+  grid-template-rows: 1fr;
+
+  @media (min-width: $tablet-width) {
+  grid-template-columns: min-content 1fr 160px;
+  align-items: center;
+  justify-items: center;
+  }
+}

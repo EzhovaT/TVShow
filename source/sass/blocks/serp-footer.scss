@@ -1,0 +1,36 @@
+.serp-footer__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.serp-footer__link {
+  text-decoration: none;
+  color: #C2C2C2;
+  @extend %fontMulishNormal;
+  font-size: 12px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.serp-footer__item {
+  width: 134px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
+}

@@ -1,0 +1,20 @@
+.page {
+  margin: 0;
+  background-color: black;
+  color: #ffffff;
+  @extend %fontMulishNormal;
+}
+
+.page__wrapper {
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+  margin: 20px auto;
+  padding: 0 20px;
+  width: 1024px;
+}
+}

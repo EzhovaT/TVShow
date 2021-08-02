@@ -1,0 +1,73 @@
+.expected {
+  padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
+}
+
+.expected__wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(87.02deg, #0d1a73 2.67%, #000000 70.52%);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-bottom: 0;
+  }
+}
+
+.expected__preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expected__block {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.expected__icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 294px;
+    height: 148px;
+    margin: 0px;
+  }
+}
+
+.expected__descr {
+  @extend %fontMulishBold;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 46px;
+  }
+}

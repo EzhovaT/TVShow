@@ -1,0 +1,129 @@
+@keyframes background-сards {
+  0% {
+    box-shadow: 0 -200px 100px -100px rgb(66, 50, 205) inset;
+  }
+  50% {
+    box-shadow: 0 -200px 100px -100px rgb(205, 68, 50) inset;
+  }
+  100% {
+    box-shadow: 0 -200px 100px -100px rgb(50, 205, 63) inset;
+  }
+}
+
+.popular-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 934px;
+  }
+}
+
+.popular-cards__item {
+  width: 130px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: red;
+
+  &_romance {
+    background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
+  }
+
+  &_drama {
+    background: linear-gradient(114.5deg, #0fffda 2.22%, #3cdb77 68.84%);
+  }
+
+  &_historical {
+    background: linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%);
+  }
+
+  &_action {
+    background: linear-gradient(
+      109.31deg,
+      #fd093f 2.4%,
+      #fb1378 2.41%,
+      #fccb1a 100%
+    );
+  }
+
+  &_sci-fi {
+    background: linear-gradient(109.31deg, #ff6472 2.4%, #fda75d 100%);
+  }
+
+  &_horror {
+    background: linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%);
+  }
+
+  &_comedy {
+    background: linear-gradient(109.93deg, #fff77b 2.37%, #ffbf42 50%);
+  }
+
+  &_documentary {
+    background: linear-gradient(
+      109.31deg,
+      #1fa2ff 2.4%,
+      #1fa2ff 2.41%,
+      #1f535c 97.46%
+    );
+  }
+
+  &:hover {
+    animation: background-сards 1s infinite alternate;
+    transform: rotate(2deg);
+    transition: 0.5s;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 110px;
+    padding: 17px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 223px;
+    height: 130px;
+    padding: 15px 0;
+  }
+}
+
+.popular-cards__icon {
+  @media (min-width: $desktop-width) {
+  width: 60px;
+  height: 60px;
+  }
+}
+
+.popular-cards__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.popular-cards__icon {
+  &_rocket {
+    transform: rotate(312deg);
+  }
+}
+
+.popular-cards__descr {
+  @extend %fontMulishNormal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}

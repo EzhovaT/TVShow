@@ -1,0 +1,40 @@
+.popular-slider {
+  padding-left: 10px;
+}
+
+.popular-slider__card {
+  margin-right: 10px;
+
+  &:hover .popular-slider__image-link{
+    transform: translateY(5px);
+  }
+}
+
+.popular-slider__image-link {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
+
+.popular-slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popular-slider__descr {
+  @extend %fontMulishBold;
+  font-size: 9px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}
