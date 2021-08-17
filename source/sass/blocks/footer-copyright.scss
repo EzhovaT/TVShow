@@ -1,0 +1,14 @@
+.footer-copyright {
+  text-align: center;
+  font-size: 12px;
+  color: $secondary-text-color;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+  }
+}
+
+.footer-copyright__link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,6 +1,9 @@
+@import "normalize-sass/normalize/import-now";
+
 @import "global/fonts.scss";
 @import "global/breakpoints.scss";
 @import "global/global.scss";
+@import "global/variables.scss";
 
 @import "blocks/page.scss";
 @import "blocks/button.scss";
@@ -22,4 +25,7 @@
 @import "blocks/footer.scss";
 @import "blocks/footer-social.scss";
 @import "blocks/serp-footer.scss";
+@import "blocks/video-player.scss";
+@import "blocks/control-panel.scss";
+@import "blocks/footer-copyright.scss";
 

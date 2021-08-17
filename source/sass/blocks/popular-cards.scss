@@ -32,7 +32,6 @@
   width: 130px;
   height: 80px;
   border-radius: 20px;
-  background-color: red;
 
   &_romance {
     background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
@@ -47,12 +46,7 @@
   }
 
   &_action {
-    background: linear-gradient(
-      109.31deg,
-      #fd093f 2.4%,
-      #fb1378 2.41%,
-      #fccb1a 100%
-    );
+    background: linear-gradient(109.31deg, #fd093f 2.4%, #fb1378 2.41%, #fccb1a 100%);
   }
 
   &_sci-fi {
@@ -68,12 +62,7 @@
   }
 
   &_documentary {
-    background: linear-gradient(
-      109.31deg,
-      #1fa2ff 2.4%,
-      #1fa2ff 2.41%,
-      #1f535c 97.46%
-    );
+    background: linear-gradient(109.31deg, #1fa2ff 2.4%, #1fa2ff 2.41%, #1f535c 97.46%);
   }
 
   &:hover {
@@ -120,7 +109,7 @@
   @extend %fontMulishNormal;
   font-size: 12px;
   line-height: 20px;
-  color: #fff;
+  color: $main-text-color;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;

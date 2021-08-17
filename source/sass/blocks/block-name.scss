@@ -10,27 +10,31 @@
     border-radius: 50px;
     left: 10px;
 
-  @media (min-width: $desktop-width) {
-    height: 23px;
-  }
+    @media (min-width: $desktop-width) {
+      height: 23px;
+    }
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url('../img/arrow.svg');
+    background-image: url("../img/arrow.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     top: 2px;
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+    }
   }
 }
 
 .block-name__link {
   @extend %fontMulishBold;
   text-decoration: none;
-  color: #fff;
+  color: $main-text-color;
   padding-left: 10px;
   font-size: 18px;
 

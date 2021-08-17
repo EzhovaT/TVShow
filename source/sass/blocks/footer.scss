@@ -1,6 +1,6 @@
 .footer {
   padding: 20px;
-  background-color: #101012;
+  background-color: $footer-background;
 
   @media (min-width: $tablet-width) {
     padding: 20px 100px;

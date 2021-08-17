@@ -1,12 +1,13 @@
 .page {
   margin: 0;
-  background-color: black;
-  color: #ffffff;
+  background-color: $main-background-color;
+  color: $main-text-color;
   @extend %fontMulishNormal;
 }
 
 .page__wrapper {
   margin: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 20px 30px;

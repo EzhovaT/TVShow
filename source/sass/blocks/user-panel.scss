@@ -9,7 +9,8 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 
@@ -17,6 +18,44 @@
   margin: 0 10px;
 }
 
-.user-panel__link-icon_red {
-  fill: red;
+.user-panel__input {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  border: 0;
+  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    right: 0;
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.user-panel__search-wrapper {
+  position: relative;
+  height: 85px;
+  display: flex;
+  justify-content: flex-end;
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    height: 25px;
+  }
+}
+
+.user-panel__search-wrapper.user-panel__search-wrapper_active {
+  justify-content: space-around;
+  .user-panel__input {
+    width: 80px;
+    margin-right: 5px;
+    padding: 7px;
+    transition: all 0.6s ease;
+    background-color: $input-background-color;
+  }
+}
+
+.user-panel__btn-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
